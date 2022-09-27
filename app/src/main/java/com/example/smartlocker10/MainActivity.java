@@ -7,6 +7,8 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+
+
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.os.Bundle;
@@ -87,6 +89,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent,PICK_IMAGE);
             }
         });
+
+        //파이어베이스에서 이미지 불러오기
+        Button Button_load = (Button) findViewById(R.id.image_load);
+
+        Button_load.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) { //이미지 불러오기 이미지 전환
+                Intent intent = new Intent(getApplicationContext(), Activity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
 
         upload.setOnClickListener(new View.OnClickListener() {
             @Override

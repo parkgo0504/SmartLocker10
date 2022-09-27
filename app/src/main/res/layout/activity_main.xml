@@ -46,5 +46,11 @@
         android:textAlignment = "center"
         android:layout_marginTop="50dp"
         android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/image_load"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:text="image load" />
 </LinearLayout>
 
